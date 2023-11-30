@@ -8,7 +8,7 @@ if ('/' === $urlPath) {
 } elseif ('/show' === $urlPath && isset($_GET['id'])) {
     echo $recipeController->show($_GET["id"]);
 } elseif ('/add' === $urlPath) {
-    $recipeController->add();
+    echo $recipeController->add();
 } elseif ('/delete' === $urlPath && isset($_GET['id']) ) {
     $recipeController->delete($_GET["id"]);
 } elseif ('/update' === $urlPath && isset($_GET['id']) ) {

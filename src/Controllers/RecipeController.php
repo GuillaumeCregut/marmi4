@@ -63,7 +63,7 @@ class RecipeController
         }
 
         // Generate the web page
-        require __DIR__ . '/../Views/form.php';
+        return $this->twig->render('form.html.twig', []);
     }
 
     private function validate(array $recipe)
