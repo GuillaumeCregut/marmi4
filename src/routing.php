@@ -12,7 +12,7 @@ if ('/' === $urlPath) {
 } elseif ('/delete' === $urlPath && isset($_GET['id']) ) {
     $recipeController->delete($_GET["id"]);
 } elseif ('/update' === $urlPath && isset($_GET['id']) ) {
-    $recipeController->update($_GET["id"]);
+    echo $recipeController->update($_GET["id"]);
 }
  else {
     header('HTTP/1.1 404 Not Found');
