@@ -38,7 +38,7 @@ class RecipeController
             header("HTTP/1.1 404 Not Found");
             die("Recipe not found");
         }
-        return $this->twig->render('indexRecipe.html.twig', [
+        return $this->twig->render('showRecipe.html.twig', [
             'recipe' => $recipe
         ]);
         // Generate the web page

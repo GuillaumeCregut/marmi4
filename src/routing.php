@@ -6,7 +6,7 @@ $recipeController = new App\Controllers\RecipeController();
 if ('/' === $urlPath) {
     echo $recipeController->browse();
 } elseif ('/show' === $urlPath && isset($_GET['id'])) {
-    $recipeController->show($_GET["id"]);
+    echo $recipeController->show($_GET["id"]);
 } elseif ('/add' === $urlPath) {
     $recipeController->add();
 } elseif ('/delete' === $urlPath && isset($_GET['id']) ) {
